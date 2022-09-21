@@ -26,3 +26,82 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* ----------- */
+
+/* * {
+  border: 1px solid black;
+} */
+
+
+/* defining the limits */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mid {
+  display: flex;
+  height: auto;
+  flex: 1 1 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 300px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap:wrap;
+  padding: 40px;
+  gap: 30px;
+  min-width: auto;
+  max-width: 1200px;
+  align-content: flex-start;
+}
+
+ul {
+  
+  width: 200px;
+  font-size: 24px;
+  padding-left:20px;
+}
+
+li,
+a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+.header,
+.footer {
+  min-width: 700px;
+}
